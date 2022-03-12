@@ -14,4 +14,5 @@ Its free and 100% safe. You can check all code by yourself.
 ## Contacts
 
 If you are in a official group (Farmers World) уou can contact me directly on discord if you have any questions or script doesn't work for you.
+
 My discord - 'Shrixy#9453'
