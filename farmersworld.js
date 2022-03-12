@@ -28,7 +28,6 @@
                     // ENERGY RESTORE START
                     const energy = document.querySelectorAll('.resource__group')[3]
                     const energyCheck = energy.innerText.split('\n/')
-                    console.log(energyCheck[0], energyCheck[1])
                     if (energyCheck[0] <= minAmountOfEnergy) {
                         document.querySelector('.resource-energy--plus').click()
                         await new Promise((res) => setTimeout(res, delayAfterClick))
@@ -44,8 +43,8 @@
                     await new Promise((res) => setTimeout(res, delayAfterClick))
 
                     // REPAIR START
+                    document.getElementById('root').click()
                     const cardName = document.querySelector('div.info-title-name').innerText
-                    console.log(cardName)
                     if (!cardName.includes('Member') && mapId === 0) {
                         const repairButton = document.querySelectorAll('.info-section .plain-button')[1];
                         const currentDurability = +document.querySelector('.card-number').innerText.split('/ ')[0]
@@ -59,6 +58,7 @@
                     // REPAIR END
 
                     // MINE OR CLAIM START
+                    document.getElementById('root').click()
                     const mineClaimButton = document.getElementsByClassName('button-section set-height')[0]
                     if (mineClaimButton.innerText === 'Mine' || mineClaimButton.innerText === 'Claim') {
                         mineClaimButton.click()
