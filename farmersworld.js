@@ -53,7 +53,7 @@
                         const percentageRatio = (currentDurability / maxDurability) * 100
                         if (percentageRatio <= repairDurabilityPercent) {
                             repairButton.click()
-                            await new Promise((res) => setTimeout(res, delayAfterClick))
+                            await new Promise((res) => setTimeout(res, delayAfterClick * 3))
                         }
                     }
                     // REPAIR END
