@@ -1,11 +1,11 @@
 (async () => {
     // Settings
-    const delayDefault = 5 * 1000
-    const delayAfterClick = 2 * 1000
-    const minAmountOfEnergy = 250
-    const repairDurabilityPercent = 50
+    const delayDefault = 5 * 1000 // The current example is 5 seconds. I don't recomend to change it.
+    const delayAfterClick = 2 * 1000 // The current example is 2 seconds. I don't recomend to change it.
+    const minAmountOfEnergy = 250 // If value of current energy is equal or less, energy will be restored. You can set any value you want.
+    const repairDurabilityPercent = 50 // Current value is percent. For example chainsaw will be repaired when it hit 450/900 durability, because (450/900)*100 = 50%. You can set any value you want.
 
-    // Clicking the 'map' button
+    // Click the 'map' button
     let result = {}
     const mapButton = document.querySelector('.navbar-group--icon[alt="Map"]')
     mapButton.click()
