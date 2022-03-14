@@ -60,7 +60,7 @@
                     // MINE OR CLAIM START
                     document.getElementById('root').click()
                     const mineClaimButton = document.getElementsByClassName('button-section set-height')[0]
-                    if (!mineClaimButton.innerText === 'Mine' && !mineClaimButton.children[0].className.includes('disabled')) {
+                    if (mineClaimButton.innerText !== 'Mine' && !mineClaimButton.children[0].className.includes('disabled')) {
                         mineClaimButton.click()
                         await new Promise((res) => setTimeout(res, delayDefault * 2))
                         while (!mineClaimButton.innerText === 'Countdown' || document.getElementsByClassName('plain-button short undefined')[0]) {
