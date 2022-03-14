@@ -36,7 +36,7 @@
                             document.querySelector('img[alt="Plus Icon"]').click()
                         }
                         Array.from(document.querySelectorAll("div.plain-button")).find(el => el.textContent == 'Exchange').click()
-                        await new Promise((res) => setTimeout(res, delayAfterClick))
+                        await new Promise((res) => setTimeout(res, delayAfterClick * 3))
                     }
                     // ENERGY RESTORE END
 

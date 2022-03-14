@@ -2,7 +2,7 @@
     // Settings
     const delayDefault = 5 * 1000 // The current example is 5 seconds. I don't recomend to change it.
     const delayAfterClick = 2 * 1000 // The current example is 2 seconds. I don't recomend to change it.
-    const minAmountOfEnergy = 665 // If value of current energy is equal or less, energy will be restored. You can set any value you want, BUT READ IMPORTANT NOTE ON MAIN PAGE.
+    const minAmountOfEnergy = 350 // If value of current energy is equal or less, energy will be restored. You can set any value you want, BUT READ IMPORTANT NOTE ON MAIN PAGE.
     const repairDurabilityPercent = 50 // Current value is percent. For example chainsaw will be repaired when it hit 450/900 durability, because (450/900)*100 = 50%. You can set any value you want.
 
     // Click the 'map' button
@@ -36,7 +36,7 @@
                             document.querySelector('img[alt="Plus Icon"]').click()
                         }
                         Array.from(document.querySelectorAll("div.plain-button")).find(el => el.textContent == 'Exchange').click()
-                        await new Promise((res) => setTimeout(res, delayAfterClick))
+                        await new Promise((res) => setTimeout(res, delayAfterClick * 3))
                     }
                     // ENERGY RESTORE END
 
