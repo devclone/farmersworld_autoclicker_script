@@ -1,3 +1,7 @@
+# Important note
+After game update (if it happens) this script won't work because of 3D version of the game!  The only way out is to use bots.  Me and my friend made simple bot witch runs on YOUR LOCALHOST.
+  You can check all info here - https://github.com/Splash-07/fw-bot  Bot works ONLY with **tools**. Because of problems with CPU impossible to test 10+ tools + animals + farm plot without enough stacked WAX for CPU.
+
 # farmersworld_autoclicker_script
 Autoclicker (script) to Mine, Claim, Repair and restore Energy for NFT Game (https://farmersworld.io/).
 Its free and 100% safe. You can check all code by yourself.
